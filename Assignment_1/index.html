@@ -1,33 +1,98 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>My First Webpage</title>
     </head>
+
     <body>
         <h1>Nikita</h1>
         <h2>WEB Technologies 1 (Front End)</h2>
-        <h3>About Me</h3>
-        <p>I love cats!</p>
 
-        <h3>My Hobbies:</h3>
-        <ol>
-            <li>Playing with my cat</li>
-            <li>Going to the gym</li>
-            <li>Watching movies</li>
-        </ol>
+        <table border="1" width="100%" cellpadding="20" cellspacing="0">
+            <tr>
+                <td width="25%" valign="top">
+                    <h3>Menu:</h3>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#hobbies">My Hobbies</a></li>
+                        <li><a href="#websites">My Favorite Websites</a></li>
+                        <li><a href="#photo">Photo of My Cat</a></li>
+                        <li><a href="#button">Button</a></li>
+                        <li><a href="#schedule">Class Schedule</a></li>
+                        <li><a href="#mood">My Mood Today</a></li>
+                        <li><a href="#form">Form</a></li>
+                    </ul>
+                </td>
 
-        <h3>My Favorite Websites:</h3>
-        <ul>
-            <li><a href="https://chatgpt.com/">ChatGPT</a></li>
-            <li><a href="https://youtube.com">YouTube</a></li>
-            <li><a href="https://github.com/">GitHub</a></li>
-        </ul>
+                <td width="75%" valign="top">
+                    <h3 id="about">About Me</h3>
+                    <p>I love cats!</p>
 
-        <h3>Photo of My Cat</h3>
-        <img src="cat.jpg" alt="My Cat" width="200">
+                    <h3 id="hobbies">My Hobbies:</h3>
+                    <ol>
+                        <li>Playing with my cat</li>
+                        <li>Going to the gym</li>
+                        <li>Watching movies</li>
+                    </ol>
 
-        <div>
-            <button type="button">Click Me</button>
-        </div>
+                    <h3 id="websites">My Favorite Websites:</h3>
+                    <ul>
+                        <li><a href="https://chatgpt.com/" target="_blank">ChatGPT</a></li>
+                        <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                    </ul>
+
+                    <h3 id="photo">Photo of My Cat</h3>
+                    <img src="cat.jpg" alt="My Cat" width="200">
+
+                    <br><br>
+                    <button type="button" id="button">Click Me</button>
+                    <br><br>
+
+                    <table border="1" id="schedule">
+                        <caption>Class Schedule</caption>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Day</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>Discrete Mathematics</td>
+                            <td>Monday</td>
+                            <td>10:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td>WEB Technologies</td>
+                            <td>Wednesday</td>
+                            <td>1:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Introduction to Functional Programming</td>
+                            <td>Friday</td>
+                            <td>3:00 PM</td>
+                        </tr>
+                    </table>
+
+                    <h3 id="mood">My Mood Today</h3>
+                    <p>Today I'm missing my little cat so much 🐱🥺, and I can't wait to go home and cuddle my furry friend ❤️!</p>
+
+                    <h3 id="form">Form</h3>
+                    <form action="#" method="post">
+                        <label for="username">Name:</label><br>
+                        <input type="text" id="username" name="username" placeholder="Enter your name" required><br><br>
+
+                        <label for="useremail">Email:</label><br>
+                        <input type="email" id="useremail" name="useremail" placeholder="example@mail.com" required><br><br>
+
+                        <label for="favcolor">Favorite Color:</label><br>
+                        <input type="color" id="favcolor" name="favcolor" value="#ffffff"><br><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
