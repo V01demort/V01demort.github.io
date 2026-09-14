@@ -4,6 +4,8 @@
 
 **Group:** IT-2501
 
+**GitHub Pages URL:** https://v01demort.github.io/Assignment_1/index.html
+
 ## Objective
 The main objective of this assignment is to understand the structure and purpose of HTML, use basic and intermediate HTML tags to create a simple webpage, apply CSS properties to style elements, create structured layouts using the box model, and publish the first webpage online.
 
