@@ -1,0 +1,19 @@
+body {
+    background-color: #f4f4f9;
+    font-family: Arial;
+}
+
+p {
+    color: grey;
+    font-family: Verdana;
+}
+
+#main-heading {
+    color: darkred;
+    font-family: Georgia;
+}
+
+.highlight {
+    background-color: yellow;
+    font-family: Calibri;
+}
