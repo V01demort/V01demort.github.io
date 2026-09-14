@@ -2,13 +2,19 @@
 <html>
 
     <head>
+        <meta charset="UTF-8">
         <title>My First Webpage</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="favicon.png">
     </head>
 
     <body>
-        <h1 id="main-heading">Nikita</h1>
-        <h2>WEB Technologies 1 (Front End)</h2>
+        <div class="header">
+            <h1 id="main-heading">Nikita</h1>
+            <h2>WEB Technologies 1 (Front End)</h2>
+        </div>
+
+        <div class="main">
 
         <table border="1" width="100%" cellpadding="20" cellspacing="0">
             <tr>
@@ -92,8 +98,25 @@
                         <button type="submit">Submit</button>
                     </form>
 
+                    <h3>Positioning:</h3>
+                    <div class="pos-static">Static element</div>
+                    <div class="pos-relative">Relative element</div>
+                    <div class="pos-absolute">Absolute element</div>
+
+                    <h3>Float and Clear:</h3>
+                    <div class="box-left">Left Box</div>
+                    <div class="box-right">Right Box</div>
+                    <div class="clear-box">Cleared content below</div>
+
                 </td>
             </tr>
         </table>
+
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Nikita</p>
+        </div>
+        
     </body>
 </html>
