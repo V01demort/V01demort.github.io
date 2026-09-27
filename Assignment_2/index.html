@@ -7,7 +7,7 @@
             justify-content: space-between;
             align-items: center;
 
-            background-color: lightgrey;
+            background-color: #d1b7e6;
             padding: 15px 25px;
         }
 
@@ -16,18 +16,26 @@
             gap: 20px;
         }
 
-        .cards {
-            display: flex;
+        .page {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
             gap: 20px;
-            margin-top: 20px;
-            justify-content: center;
+
+            padding: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            gap: 20px;
         }
 
         .card {
-            width: 200px;
             display: flex;
             flex-direction: column;
-            border: 1px solid black;
+
+            background-color: white;
+            border: 1px solid #8c00ff;
             padding: 10px;
         }
 
@@ -37,6 +45,22 @@
 
         .card:hover {
             transform: scale(1.05);
+            box-shadow: 0 4px 10px grey;
+        }
+
+        body {
+            background-color: #f9f6fc;
+        }
+
+        .sidebar {
+            background-color: #ece2f4;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #d1b7e6;
+            padding: 20px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -47,34 +71,58 @@
 
     <div class="links">
         <a href="#">Home</a>
-        <a href="#">Breeds</a>
+        <a href="#">Projects</a>
         <a href="#">About</a>
     </div>
 </div>
 
-<div class="cards">
+<div class="page">
 
-    <div class="card">
-        <img src="british.jpg">
-        <h3>British Shorthair</h3>
-        <p>A calm and friendly cat with soft, thick fur.</p>
-        <button>Read more</button>
+    <div class="main">
+        <h2>Cat Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <img src="british.jpg">
+                <h3>British Shorthair</h3>
+                <p>A calm and friendly cat with soft, thick fur.</p>
+                <button>Read more</button>
+            </div>
+
+            <div class="card">
+                <img src="sphynx.jpg">
+                <h3>Sphynx</h3>
+                <p>A hairless cat with a unique and funny appearance.</p>
+                <button>Read more</button>
+            </div>
+
+            <div class="card">
+                <img src="siamese.jpg">
+                <h3>Siamese</h3>
+                <p>An active and social cat with beautiful blue eyes.</p>
+                <button>Read more</button>
+            </div>
+
+            <div class="card">
+                <img src="persian.jpg">
+                <h3>Persian</h3>
+                <p>A fluffy cat with a cute face and a funny, grumpy look.</p>
+                <button>Read more</button>
+            </div>
+
+        </div>
     </div>
 
-    <div class="card">
-        <img src="sphynx.jpg">
-        <h3>Sphynx</h3>
-        <p>A hairless cat with a unique and funny appearance.</p>
-        <button>Read more</button>
+    <div class="sidebar">
+        <h3>About</h3>
+        <p>This page contains some of my favorite cat breeds and cat-related projects.</p>
     </div>
 
-    <div class="card">
-        <img src="siamese.jpg">
-        <h3>Siamese</h3>
-        <p>An active and social cat with beautiful blue eyes.</p>
-        <button>Read more</button>
-    </div>
+</div>
 
+<div class="footer">
+    <p>Cat Portfolio</p>
 </div>
 
 </body>
