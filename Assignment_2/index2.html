@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .page {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: auto auto auto;
+
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+            gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #e6d5c3;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #f2eee9;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #fafafa;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #e6d5c3;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px grey;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    <div class="header">
+        <h2>Cat Meme Gallery</h2>
+        <p>A small collection of funny and iconic cat memes.</p>
+    </div>
+
+    <div class="sidebar">
+        <h3>About</h3>
+        <p>This gallery contains some of the funniest cat pictures and reactions.</p>
+    </div>
+
+    <div class="main">
+        <h3>Gallery</h3>
+
+        <div class="gallery">
+            <img src="cat1.jpg">
+            <img src="cat2.jpg">
+            <img src="cat3.jpg">
+            <img src="cat4.jpg">
+            <img src="cat5.jpg">
+            <img src="cat6.jpg">
+            <img src="cat7.jpg">
+            <img src="cat8.jpg">
+            <img src="cat9.jpg">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Cat Meme Gallery</p>
+    </div>
+
+</div>
+
+</body>
+</html>
