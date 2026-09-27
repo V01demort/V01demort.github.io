@@ -1,13 +1,13 @@
 # Assignment 2 — Advanced CSS: Flexbox & Grid
 
 **Name:** Nikita Zuy  
-**Group:** [YOUR GROUP]
+**Group:** IT-2501
 
 ## Live Websites
 
-1. [Part 1 — Flexbox](PASTE_PART_1_LINK_HERE)
-2. [Part 2 — Grid System](PASTE_PART_2_LINK_HERE)
-3. [Part 3 — Flexbox & Grid](PASTE_PART_3_LINK_HERE)
+1. [Part 1 — Flexbox](https://v01demort.github.io/Assignment_2/index1.html)
+2. [Part 2 — Grid System](https://v01demort.github.io/Assignment_2/index2.html)
+3. [Part 3 — Flexbox & Grid](https://v01demort.github.io/Assignment_2/index.html)
 
 ---
 
@@ -38,15 +38,13 @@ A scale hover effect is added to the cards.
 
 ### Website Screenshot
 
-<!-- INSERT SCREENSHOT OF PART 1 WEBSITE HERE -->
+<img width="3199" height="1725" alt="Снимок экрана 2026-09-26 223837" src="https://github.com/user-attachments/assets/e12b8c8d-44d6-4be0-a109-e1e583cc07c7" />
 
-![Part 1 Website](screenshots/part1-website.png)
 
 ### Code Screenshot
 
-<!-- INSERT SCREENSHOT OF PART 1 CODE HERE -->
+<img width="552" height="1516" alt="Снимок экрана 2026-09-26 223929" src="https://github.com/user-attachments/assets/f8c7bf7a-7471-49b1-89d8-3bbf775138a3" />
 
-![Part 1 Code](screenshots/part1-code.png)
 
 ---
 
@@ -81,15 +79,13 @@ A hover effect enlarges the image slightly and adds a shadow.
 
 ### Website Screenshot
 
-<!-- INSERT SCREENSHOT OF PART 2 WEBSITE HERE -->
+<img width="1698" height="1578" alt="Снимок экрана 2026-09-27 200546" src="https://github.com/user-attachments/assets/77dc2c63-05f8-4a32-8d74-81615d72a745" />
 
-![Part 2 Website](screenshots/part2-website.png)
 
 ### Code Screenshot
 
-<!-- INSERT SCREENSHOT OF PART 2 CODE HERE -->
+<img width="584" height="1526" alt="Снимок экрана 2026-09-27 200722" src="https://github.com/user-attachments/assets/a3dd38c4-84ac-421b-8480-2c7783e56d97" />
 
-![Part 2 Code](screenshots/part2-code.png)
 
 ---
 
@@ -121,15 +117,13 @@ The footer is placed across the bottom of the page.
 
 ### Website Screenshot
 
-<!-- INSERT SCREENSHOT OF PART 3 WEBSITE HERE -->
+<img width="3199" height="1648" alt="Снимок экрана 2026-09-27 205139" src="https://github.com/user-attachments/assets/57aada59-9087-4b5e-9732-42c93d6d1324" />
 
-![Part 3 Website](screenshots/part3-website.png)
 
 ### Code Screenshot
 
-<!-- INSERT SCREENSHOT OF PART 3 CODE HERE -->
+<img width="512" height="1664" alt="Снимок экрана 2026-09-27 210458" src="https://github.com/user-attachments/assets/7abcf33f-74eb-46ca-a6eb-69bc77097dfa" />
 
-![Part 3 Code](screenshots/part3-code.png)
 
 ---
 
