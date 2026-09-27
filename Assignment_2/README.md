@@ -1,81 +1,146 @@
-# Assignment #1. HTML & CSS Basics
+# Assignment 2 — Advanced CSS: Flexbox & Grid
 
-**Name:** Nikita
+**Name:** Nikita Zuy  
+**Group:** [YOUR GROUP]
 
-**Group:** IT-2501
+## Live Websites
 
-**GitHub Pages URL:** https://v01demort.github.io/Assignment_1/index.html
-
-## Objective
-The main objective of this assignment is to understand the structure and purpose of HTML, use basic and intermediate HTML tags to create a simple webpage, apply CSS properties to style elements, create structured layouts using the box model, and publish the first webpage online.
-
-## Summary of Work Process
-During this assignment, I successfully built and styled my first webpage from scratch. The process was divided into four main parts:
-*   **Part 1:** I set up the basic HTML boilerplate and structured the content using headings, paragraphs, ordered/unordered lists, images, links, and buttons.
-*   **Part 2:** I added intermediate HTML elements such as a class schedule table, a two-column table layout (optional challenge), typing emojis, and an interactive HTML form.
-*   **Part 3:** I connected CSS to my webpage, experimenting with inline, internal, and external stylesheets (style.css). I learned how to use element, class, and ID selectors to apply different colors and fonts.
-*   **Part 4:** I organized the page structure using `<div>` tags and styled them using the Box Model (margins, padding, borders). I also successfully applied CSS positioning, sizing units (px, %, em, rem), and float properties to arrange my content before publishing the site on GitHub Pages.
+1. [Part 1 — Flexbox](PASTE_PART_1_LINK_HERE)
+2. [Part 2 — Grid System](PASTE_PART_2_LINK_HERE)
+3. [Part 3 — Flexbox & Grid](PASTE_PART_3_LINK_HERE)
 
 ---
 
-## Assignment Parts & Screenshots
+# Part 1. Flexbox
 
-### Part 1. Introduction to HTML
-**Tasks Completed:** 
-Step 0 (Basic HTML boilerplate), Step 1 (Structure text using HTML tags), Step 2 (HTML Lists), Step 3 (Images and Links), Step 4 (HTML Buttons).
+## Task 0. Navigation Bar
 
-**Screenshots:**
+I created a navigation bar with a logo on the left and navigation links on the right.
 
-<img width="828" height="1734" alt="Снимок экрана 2026-09-12 221421" src="https://github.com/user-attachments/assets/d290b567-ea54-446a-a95b-1ce22b876225" />
+The header uses Flexbox to:
+- place the logo and links horizontally;
+- move them to opposite sides;
+- vertically center the elements;
+- create spacing between navigation links.
 
-<img width="1182" height="1425" alt="Снимок экрана 2026-09-12 220145" src="https://github.com/user-attachments/assets/877b091e-1c41-4412-9649-b38d1a8b68e7" />
+## Task 1. Card Row
 
+I created a row of cat breed cards.
 
+Each card contains:
+- an image;
+- a title;
+- a short description;
+- a button.
 
-### Part 2. Intermediate HTML
-**Tasks Completed:** 
-Step 5 (Tables), Step 6 (Using Tables for Layout - Optional Challenge), Step 7 (Typing Emojis), Step 8 (HTML Forms).
+Flexbox is used to arrange the cards in a row with equal spacing.  
+A scale hover effect is added to the cards.
 
-**Screenshots:**
+### Website Screenshot
 
-<img width="1548" height="1510" alt="Снимок экрана 2026-09-14 164636" src="https://github.com/user-attachments/assets/266e79c2-8668-42ce-9897-f1c79de67138" />
+<!-- INSERT SCREENSHOT OF PART 1 WEBSITE HERE -->
 
-<img width="895" height="1571" alt="Снимок экрана 2026-09-14 164539" src="https://github.com/user-attachments/assets/53d37a25-5663-402f-80e0-77a71635243b" />
+![Part 1 Website](screenshots/part1-website.png)
 
+### Code Screenshot
 
+<!-- INSERT SCREENSHOT OF PART 1 CODE HERE -->
 
-### Part 3. Introduction to CSS
-**Tasks Completed:** 
-Step 9 (Intro to CSS), Step 10 (Inline CSS), Step 11 (Internal CSS), Step 12 (External CSS), Step 13 (CSS Syntax & Selectors), Step 14 (Classes vs. IDs).
-
-**Screenshots:**
-
-<img width="1536" height="1508" alt="Снимок экрана 2026-09-14 171059" src="https://github.com/user-attachments/assets/05d1780d-c16d-46e1-9b1e-df871b24b009" />
-
-<img width="988" height="1594" alt="Снимок экрана 2026-09-14 170530" src="https://github.com/user-attachments/assets/bb3cfefd-2f92-4764-937f-66b7702f2691" />
-
-<img width="1130" height="888" alt="Снимок экрана 2026-09-14 170543" src="https://github.com/user-attachments/assets/2f22658c-89c5-4742-93a3-869ced754692" />
-
-
-
-### Part 4. Intermediate CSS
-**Tasks Completed:** 
-Step 15 (Favicons), Step 16 (HTML Divs), Step 17 (Box Model), Step 18 (CSS Positioning), Step 19 (CSS Sizing), Step 20 (Float and Clear).
-
-**Screenshots:**
-
-<img width="3199" height="1899" alt="Снимок экрана 2026-09-14 234952" src="https://github.com/user-attachments/assets/a5e0df5e-6e0e-42da-9f1a-2d62634c008d" />
-
-<img width="3199" height="1901" alt="Снимок экрана 2026-09-14 235007" src="https://github.com/user-attachments/assets/4525e575-70b2-4316-a7a1-107f46a04ab7" />
-
-<img width="857" height="1620" alt="Снимок экрана 2026-09-14 233014" src="https://github.com/user-attachments/assets/575784f7-8d28-4adb-bbf7-d10c97a2fb15" />
-
-<img width="560" height="1671" alt="Снимок экрана 2026-09-14 233038" src="https://github.com/user-attachments/assets/5e67bce7-eb27-4d87-9c0c-85113724ace8" />
+![Part 1 Code](screenshots/part1-code.png)
 
 ---
 
-## Step 21. Published Website
-**GitHub Pages URL:** https://v01demort.github.io/Assignment_1/index.html
+# Part 2. Grid System
 
-## Final Reflection
-This project was a great practical introduction to front-end development. I learned how to structure content logically using HTML tags and ensure the code runs without errors. Implementing the two-column table layout and experimenting with the CSS box model and positioning gave me a solid understanding of how to customize webpage layouts. The final process of publishing the website on GitHub Pages was highly rewarding and introduced me to version control and web hosting.
+## Task 2. Page Layout with Grid Areas
+
+I created a page layout using CSS Grid.
+
+The page contains:
+- a header;
+- a sidebar;
+- main content;
+- a footer.
+
+Grid areas are used to position the sections:
+- the header spans across the top;
+- the sidebar is placed on the left;
+- the main section is placed on the right;
+- the footer spans across the bottom.
+
+## Task 3. Image Gallery
+
+Inside the main section, I created a 3 × 3 image gallery with nine cat meme images.
+
+CSS Grid is used to create:
+- three equal-width columns;
+- three equal-height rows;
+- consistent gaps between images.
+
+A hover effect enlarges the image slightly and adds a shadow.
+
+### Website Screenshot
+
+<!-- INSERT SCREENSHOT OF PART 2 WEBSITE HERE -->
+
+![Part 2 Website](screenshots/part2-website.png)
+
+### Code Screenshot
+
+<!-- INSERT SCREENSHOT OF PART 2 CODE HERE -->
+
+![Part 2 Code](screenshots/part2-code.png)
+
+---
+
+# Part 3. Combining Flexbox & Grid
+
+## Task 4. Portfolio Page
+
+I created a cat-themed portfolio page using both Flexbox and CSS Grid.
+
+Flexbox is used in the header to arrange:
+- the logo;
+- navigation links.
+
+CSS Grid is used in the main section to create:
+- a projects area on the left;
+- an information sidebar on the right.
+
+The project cards contain:
+- an image;
+- a title;
+- a description;
+- a button.
+
+Each project card also uses Flexbox with a column layout.
+
+A hover effect enlarges the cards and adds a shadow.
+
+The footer is placed across the bottom of the page.
+
+### Website Screenshot
+
+<!-- INSERT SCREENSHOT OF PART 3 WEBSITE HERE -->
+
+![Part 3 Website](screenshots/part3-website.png)
+
+### Code Screenshot
+
+<!-- INSERT SCREENSHOT OF PART 3 CODE HERE -->
+
+![Part 3 Code](screenshots/part3-code.png)
+
+---
+
+# Work Summary
+
+In this assignment, I practiced using Flexbox and CSS Grid for different webpage layouts.
+
+In Part 1, I used Flexbox to create a navigation bar and a row of cards.
+
+In Part 2, I used CSS Grid to create a page layout with grid areas and a 3 × 3 image gallery.
+
+In Part 3, I combined Flexbox and Grid in one portfolio page. Flexbox was used for navigation and project cards, while Grid was used for the main page structure.
+
+All three parts use a cat theme and simple hover effects.
