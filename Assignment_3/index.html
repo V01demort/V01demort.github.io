@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-    h1 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .boxes {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .box {
-        width: 100%;
-        background-color: lightgray;
-    }
-
-    @media (min-width: 600px) {
+    <style>
         h1 {
-            font-size: 30px;
+            font-size: 20px;
         }
 
         p {
-            font-size: 18px;
+            font-size: 14px;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
         }
 
         .box {
-            width: 50%;
-        }
-    }
-
-    @media (min-width: 900px) {
-        h1 {
-            font-size: 40px;
+            background-color: lightgray;
+            padding: 20px;
         }
 
-        p {
-            font-size: 22px;
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .boxes {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
-        .box {
-            width: 33.33%;
+        @media (min-width: 900px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+
+            .boxes {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
         }
-    }
-</style>
+    </style>
 </head>
 
 <body>
 
-<h1>Responsive Webpage</h1>
-<p>This is a paragraph.</p>
+    <h1>Responsive Webpage</h1>
+    <p>This is a paragraph.</p>
 
-<div class="boxes">
-    <div class="box">Box 1</div>
-    <div class="box">Box 2</div>
-    <div class="box">Box 3</div>
-</div>
+    <div class="boxes">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
 
 </body>
 </html>
