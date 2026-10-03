@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    @media (min-width: 600px) {
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .box {
+            width: 50%;
+        }
+    }
+
+    @media (min-width: 900px) {
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        .box {
+            width: 33.33%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Responsive Webpage</h1>
+<p>This is a paragraph.</p>
+
+<div class="boxes">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>
