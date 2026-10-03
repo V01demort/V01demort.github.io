@@ -1,7 +1,7 @@
 # Assignment 3. Responsive Web Design
 
 **Name:** Nikita Zuy  
-**Group:** [YOUR GROUP]
+**Group:** IT-2501
 
 ## Website Links
 
