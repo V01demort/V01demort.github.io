@@ -1,7 +1,7 @@
 # Assignment 3. Responsive Web Design
 
 **Name:** Nikita Zuy  
-**Group:** IT-2501
+**Group:** [YOUR GROUP]
 
 ## Website Links
 
@@ -26,9 +26,21 @@ Created three responsive boxes:
 
 ### Screenshots
 
-<img width="3199" height="720" alt="Снимок экрана 2026-10-03 205750" src="https://github.com/user-attachments/assets/9df90c96-cbaf-40b3-a795-5c96d20be731" />
+#### Laptop
 
-<img width="728" height="1536" alt="Снимок экрана 2026-10-03 221507" src="https://github.com/user-attachments/assets/26a746fd-8e76-439f-a1b4-0c7914882383" />
+<img width="3199" height="720" alt="Снимок экрана 2026-10-03 205750" src="https://github.com/user-attachments/assets/a6d57d7b-bb6c-4cac-a6aa-45a1e481da97" />
+
+#### Tablet
+
+<img width="1440" height="684" alt="Screenshot_20261003_222310_Chrome" src="https://github.com/user-attachments/assets/9614be6c-958e-4976-a52a-3192d0b10105" />
+
+#### Mobile
+
+<img width="1290" height="1140" alt="IMG_4644" src="https://github.com/user-attachments/assets/f0d2f508-3af6-49ca-9cb6-088a48c2d363" />
+
+#### Code
+
+<img width="728" height="1536" alt="Снимок экрана 2026-10-03 221507" src="https://github.com/user-attachments/assets/6121e71c-3739-493f-993a-829631536db4" />
 
 ---
 
@@ -47,7 +59,21 @@ Created a Bootstrap navigation bar with a logo on the left and links on the righ
 
 ### Screenshots
 
-![Part 2 Screenshot](screenshots/part2.png)
+#### Laptop
+
+<img width="3199" height="460" alt="Снимок экрана 2026-10-03 221334" src="https://github.com/user-attachments/assets/e31c8bf6-bbc0-4a54-a0f7-ef1880630603" />
+
+#### Tablet
+
+<img width="1440" height="438" alt="Screenshot_20261003_222324_Chrome" src="https://github.com/user-attachments/assets/4d37ff87-33dc-4067-923b-e772c9192196" />
+
+#### Mobile
+
+<img width="1290" height="1061" alt="IMG_4645" src="https://github.com/user-attachments/assets/ef529aba-cc76-440e-8b71-e04c0b9a7edc" />
+
+#### Code
+
+<img width="1020" height="1012" alt="Снимок экрана 2026-10-03 221527" src="https://github.com/user-attachments/assets/3ca42939-d171-4f33-92ad-e6d1f407e268" />
 
 ---
 
@@ -66,10 +92,24 @@ The project cards contain links to Assignment 1 and Assignment 2.
 
 ### Screenshots
 
-![Part 3 Screenshot](screenshots/part3.png)
+#### Laptop
+
+<img width="3199" height="904" alt="Снимок экрана 2026-10-03 223018" src="https://github.com/user-attachments/assets/bc214207-de36-4986-a48e-e16986cf641c" />
+
+#### Tablet
+
+<img width="1440" height="1063" alt="Screenshot_20261003_222936_Chrome" src="https://github.com/user-attachments/assets/cf23970b-1ea3-4776-b3b6-41952b1b7dbe" />
+
+#### Mobile
+
+<img width="1290" height="1892" alt="IMG_4646" src="https://github.com/user-attachments/assets/06961757-9e89-4b3e-bcb1-b0a7bf8e13d5" />
+
+#### Code
+
+<img width="740" height="1698" alt="Снимок экрана 2026-10-03 221545" src="https://github.com/user-attachments/assets/fc1f54d6-31ca-4989-86b7-ead304c21c59" />
 
 ---
 
 ## Work Process
 
-First, I used CSS media queries to create responsive typography and layouts. Then, I used Bootstrap's grid system and navigation bar to create responsive columns and navigation. Finally, I combined Bootstrap Grid and custom media queries to create a responsive portfolio page. I tested the pages on mobile, tablet, and desktop screen sizes.
+First, I used CSS media queries to create responsive typography and layouts. Then, I used Bootstrap's grid system and navigation bar to create responsive columns and navigation. Finally, I combined Bootstrap Grid and custom media queries to create a responsive portfolio page. I tested all three parts on laptop, tablet, and mobile screen sizes.
