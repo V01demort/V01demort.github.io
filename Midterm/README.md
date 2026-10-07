@@ -2,7 +2,7 @@
 
 **Topic:** Coffee Shop Website — Cat Café  
 **Group:** IT-2501  
-**Published website:** ADD YOUR GITHUB PAGES OR NETLIFY LINK HERE
+**Published website:** https://v01demort.github.io/Midterm/
 
 ## Description
 
