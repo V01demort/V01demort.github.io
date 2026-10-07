@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mrf Meow Café</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a class="logo" href="index.html">🐾 Mrf Meow Café</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Our Cats</a>
+                <a href="contact.html" class="active" aria-current="page">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Contact us</h1>
+        <p class="mb-4">Drop by for a coffee and a cosy break, or get in touch with a question.</p>
+
+        <div class="row g-4">
+            <section class="col-md-6">
+                <h2>Visit Mrf Meow Café</h2>
+                <p>Astana, Kazakhstan<br>hello@mrfmeow.example</p>
+                <h2>Opening hours</h2>
+                <p>Monday–Friday: 9:00–20:00<br>Saturday–Sunday: 10:00–21:00</p>
+                <img class="photo" src="images/cafe.jpg" alt="Warm hanging lights and a glowing café sign above the counter" loading="lazy">
+            </section>
+            <div class="col-md-6">
+                <form id="contact-form" action="contact.html" method="get">
+                    <p>Student demo: this form does not deliver messages.</p>
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Name</label>
+                        <input class="form-control" id="name" name="name" type="text" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-control" id="email" name="email" type="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button class="btn btn-meow" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>Astana, Kazakhstan · hello@mrfmeow.example</p>
+            <p><a href="https://www.instagram.com/">Instagram</a> · <a href="https://www.facebook.com/">Facebook</a></p>
+            <p class="mb-0">&copy; 2026 Mrf Meow Café · IT-2501</p>
+        </div>
+    </footer>
+</body>
+</html>
