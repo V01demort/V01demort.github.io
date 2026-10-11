@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h1>Registration Form</h1>
+
+        <form class="row g-3" novalidate>
+
+            <div class="col-md-6">
+                <label for="first" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="first" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">First name is required.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="last" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Last name is required.</div>
+            </div>
+
+            <div>
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid email.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="password" minlength="8" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Use at least 8 characters.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="confirm" class="form-label">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm" minlength="8" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Passwords must match and have at least 8 characters.</div>
+            </div>
+
+            <fieldset class="col-md-6">
+                <legend class="form-label">Gender:</legend>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="male" name="gender" required>
+                    <label for="male" class="form-check-label">👨 Male</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="female" name="gender" required>
+                    <label for="female" class="form-check-label">👩 Female</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="nonbinary" name="gender" required>
+                    <label for="nonbinary" class="form-check-label">⚧️ Non-binary</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="genderfluid" name="gender" required>
+                    <label for="genderfluid" class="form-check-label">🌈 Genderfluid</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Choose a gender.</div>
+                </div>
+            </fieldset>
+
+            <fieldset class="col-md-6">
+                <legend class="form-label">Hobbies:</legend>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="hobbyhorsing">
+                    <label for="hobbyhorsing" class="form-check-label">🐴 Hobbyhorsing</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="sleeping">
+                    <label for="sleeping" class="form-check-label">💤 Professional Sleeping</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="doomscrolling">
+                    <label for="doomscrolling" class="form-check-label">📱 Doomscrolling</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="eating">
+                    <label for="eating" class="form-check-label">🍫 Stress Eating</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="country" class="form-label">Country:</label>
+                <select class="form-select" id="country" required>
+                    <option value="">Select country</option>
+                    <option>🇰🇿 Kazakhstan</option>
+                    <option>🪄 Hogwarts</option>
+                    <option>🍍 Bikini Bottom</option>
+                    <option>🧚 Magix</option>
+                </select>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Choose a country.</div>
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        const form = document.querySelector("form");
+        const confirmPassword = document.querySelector("#confirm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            confirmPassword.setCustomValidity(
+                confirmPassword.value === document.querySelector("#password").value ? "" : "Passwords do not match"
+            );
+
+            this.querySelectorAll("[required]").forEach(field => {
+                const valid = field.checkValidity();
+                field.classList.toggle("is-valid", valid);
+                field.classList.toggle("is-invalid", !valid);
+            });
+        });
+
+        form.addEventListener("reset", function() {
+            confirmPassword.setCustomValidity("");
+            this.querySelectorAll(".is-valid, .is-invalid").forEach(field => {
+                field.classList.remove("is-valid", "is-invalid");
+            });
+        });
+    </script>
+
+</body>
+</html>
