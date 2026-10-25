@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>User Profile</h2>
+
+    <form>
+        <input id="username" placeholder="Username">
+        <input type="number" id="birthYear" placeholder="Birth Year">
+        <button>Create / Update Profile</button>
+    </form>
+
+    <h2>To-Do List</h2>
+
+    <ul id="list">
+        <li>Survive Monday</li>
+        <li>Procrastinate</li>
+        <li>Become a Millionaire</li>
+    </ul>
+
+    <button id="add">Add Item</button>
+    <button id="remove">Remove Item</button>
+
+    <script>
+        const userProfile = {
+            name: "Nikita",
+            birthYear: 2006,
+            isDeveloper: false,
+            hobbies: ["Hobbyhorsing", "Doomscrolling", "Stress Eating"]
+        };
+
+        const age = new Date().getFullYear() - userProfile.birthYear;
+        const hobbiesCount = userProfile.hobbies.length;
+
+        console.log("Age:", age);
+        console.log("Hobbies count:", hobbiesCount);
+
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            userProfile.name = document.getElementById("username").value;
+            userProfile.birthYear = Number(document.getElementById("birthYear").value);
+
+            console.log(userProfile);
+        });
+
+        document.getElementById("add").addEventListener("click", function() {
+            const item = prompt("Enter a new task:");
+
+            if (item) {
+                const li = document.createElement("li");
+                li.textContent = item;
+                document.getElementById("list").appendChild(li);
+            }
+        });
+
+        document.getElementById("remove").addEventListener("click", function() {
+            document.getElementById("list").lastElementChild?.remove();
+        });
+    </script>
+
+</body>
+</html>
