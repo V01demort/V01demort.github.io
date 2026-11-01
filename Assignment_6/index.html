@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Nikita's Portfolio</title>
     <style>
         body { font-family: Arial; margin: 20px; }
         img { width: 180px; }
@@ -14,25 +14,25 @@
 </head>
 <body>
     <section>
-        <h1>Welcome to My Portfolio</h1>
-        <p>My name is Nikita Zuy.</p>
-        <h2 id="headline">My Headline</h2>
-        <p class="intro">I study Computer Science at Astana IT University.</p>
+        <h1>Welcome to My Portfolio (Please Be Nice)</h1>
+        <p>I'm Nikita Zuy. Professional procrastinator in training.</p>
+        <h2 id="headline">Loading...</h2>
+        <p class="intro">I study Computer Science at Astana IT University. The deadlines are very real.</p>
         <button id="light">Light Theme</button>
         <button id="dark">Dark Theme</button>
     </section>
 
     <section>
         <h2>About Me</h2>
-        <p>I enjoy technology and learning new things.</p>
-        <p id="status">Currently learning jQuery!</p>
-        <p>Fun facts: I like cats, gaming, and computers.</p>
+        <p>I like cats, gaming, and pretending I'll start my assignments early.</p>
+        <p id="status">Currently learning jQuery. Send help.</p>
+        <p>Fun fact: I can spend an hour choosing a game and then go to sleep.</p>
         <button id="hide">Hide</button>
         <button id="show">Show</button>
         <button id="toggle">Toggle</button>
     </section>
 
-    <h2>My Gallery</h2>
+    <h2>My Gallery (Important Cat Research)</h2>
     <div id="gallery">
         <img src="cat1.jpg" alt="Cat1">
         <img src="cat2.png" alt="Cat2">
@@ -43,29 +43,29 @@
 
     <h2>My Interests</h2>
     <h3 class="slide">My Hobby</h3>
-    <p>I enjoy video games.</p>
+    <p>I play games to relax. Sometimes they make me need another break.</p>
     <h3 class="slide">My Favorite Subject</h3>
-    <p>Computer Organization and Architecture.</p>
+    <p>Computer Organization and Architecture. Surprisingly, I actually enjoy it.</p>
     <h3 id="goal">My Goal</h3>
-    <p id="goalInfo">I want to learn more about web development.</p>
+    <p id="goalInfo">Get a good job, move to Australia, and have enough money to spoil cats.</p>
 
-    <h2>My Skills</h2>
+    <h2>My Skills (Work in Progress)</h2>
     <ul id="skills">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
         <li>Git</li>
     </ul>
-    <input id="skillInput" placeholder="New skill">
+    <input id="skillInput" placeholder="New skill (or wishful thinking)">
     <button id="addSkill">Add Skill</button>
     <button id="prependSkill">Prepend Skill</button>
     <button id="removeSkill">Remove Skill</button>
 
-    <h2>Social Media</h2>
+    <h2>Social Media (I Exist Online)</h2>
     <a id="social" href="https://github.com">GitHub</a>
     <button id="changeLink">Change Link</button>
 
-    <h2>Contact</h2>
+    <h2>Contact Me (No Spam, Please)</h2>
     <form>
         <label>Name: <input id="name"></label>
         <label>Email: <input id="email" type="email"></label>
@@ -73,7 +73,7 @@
     <p>Name: <span id="liveName"></span></p>
     <p>Email: <span id="liveEmail"></span></p>
 
-    <h2>Skill Levels</h2>
+    <h2>Skill Levels (According to Me)</h2>
     <p>HTML</p>
     <div class="track"><div id="htmlBar" class="bar"></div></div>
     <p>CSS</p>
@@ -88,7 +88,7 @@
             console.log("jQuery is ready!");
 
             $("h1").css("color", "steelblue");
-            $("#headline").text("Computer Science Student");
+            $("#headline").text("Computer Science Student & Professional Procrastinator");
             $(".intro").css("font-style", "italic");
             $("#light").click(function() {
                 $("body").css({background: "white", color: "black"});
