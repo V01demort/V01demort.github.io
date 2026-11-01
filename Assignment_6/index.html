@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        img { width: 180px; }
+        h3 { cursor: pointer; }
+        .track { width: 260px; background: lightgray; }
+        .bar { width: 0; height: 20px; background: steelblue; }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Welcome to My Portfolio</h1>
+        <p>My name is Nikita Zuy.</p>
+        <h2 id="headline">My Headline</h2>
+        <p class="intro">I study Computer Science at Astana IT University.</p>
+        <button id="light">Light Theme</button>
+        <button id="dark">Dark Theme</button>
+    </section>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I enjoy technology and learning new things.</p>
+        <p id="status">Currently learning jQuery!</p>
+        <p>Fun facts: I like cats, gaming, and computers.</p>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="toggle">Toggle</button>
+    </section>
+
+    <h2>My Gallery</h2>
+    <div id="gallery">
+        <img src="cat1.jpg" alt="Cat1">
+        <img src="cat2.png" alt="Cat2">
+    </div>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeOut">Fade Out</button>
+    <button id="fadeToggle">Fade Toggle</button>
+
+    <h2>My Interests</h2>
+    <h3 class="slide">My Hobby</h3>
+    <p>I enjoy video games.</p>
+    <h3 class="slide">My Favorite Subject</h3>
+    <p>Computer Organization and Architecture.</p>
+    <h3 id="goal">My Goal</h3>
+    <p id="goalInfo">I want to learn more about web development.</p>
+
+    <h2>My Skills</h2>
+    <ul id="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+    </ul>
+    <input id="skillInput" placeholder="New skill">
+    <button id="addSkill">Add Skill</button>
+    <button id="prependSkill">Prepend Skill</button>
+    <button id="removeSkill">Remove Skill</button>
+
+    <h2>Social Media</h2>
+    <a id="social" href="https://github.com">GitHub</a>
+    <button id="changeLink">Change Link</button>
+
+    <h2>Contact</h2>
+    <form>
+        <label>Name: <input id="name"></label>
+        <label>Email: <input id="email" type="email"></label>
+    </form>
+    <p>Name: <span id="liveName"></span></p>
+    <p>Email: <span id="liveEmail"></span></p>
+
+    <h2>Skill Levels</h2>
+    <p>HTML</p>
+    <div class="track"><div id="htmlBar" class="bar"></div></div>
+    <p>CSS</p>
+    <div class="track"><div id="cssBar" class="bar"></div></div>
+    <p>JavaScript</p>
+    <div class="track"><div id="jsBar" class="bar"></div></div>
+    <p><button id="animateSkills">Animate My Skills</button></p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log("jQuery is ready!");
+
+            $("h1").css("color", "steelblue");
+            $("#headline").text("Computer Science Student");
+            $(".intro").css("font-style", "italic");
+            $("#light").click(function() {
+                $("body").css({background: "white", color: "black"});
+            });
+            $("#dark").click(function() {
+                $("body").css({background: "#222", color: "white"});
+            });
+
+            $("#hide").click(function() { $("#status").hide(); });
+            $("#show").click(function() { $("#status").show(); });
+            $("#toggle").click(function() { $("#status").toggle(); });
+
+            $("#fadeIn").click(function() { $("#gallery img").fadeIn(); });
+            $("#fadeOut").click(function() { $("#gallery img").fadeOut(); });
+            $("#fadeToggle").click(function() { $("#gallery img").fadeToggle(); });
+
+            $(".slide").click(function() {
+                let panel = $(this).next();
+                if (panel.is(":visible")) {
+                    panel.slideUp();
+                } else {
+                    panel.slideDown();
+                }
+            });
+            $("#goal").click(function() {
+                $("#goalInfo").slideToggle();
+            });
+
+            $("#addSkill").click(function() {
+                let skill = $("#skillInput").val().trim();
+                if (skill) $("#skills").append($("<li>").text(skill));
+            });
+            $("#prependSkill").click(function() {
+                let skill = $("#skillInput").val().trim();
+                if (skill) $("#skills").prepend($("<li>").text(skill));
+            });
+            $("#removeSkill").click(function() {
+                $("#skills li:last").remove();
+            });
+
+            $("#changeLink").click(function() {
+                $("#social").attr("href", "https://www.linkedin.com");
+                $("#social").text("LinkedIn");
+            });
+
+            $("#name, #email").on("input", function() {
+                $("#liveName").text($("#name").val());
+                $("#liveEmail").text($("#email").val());
+            });
+
+            let shown = false;
+            $("#animateSkills").click(function() {
+                if (shown) {
+                    $(".bar").animate({width: "0%"});
+                } else {
+                    $("#htmlBar").animate({width: "85%"});
+                    $("#cssBar").animate({width: "70%"});
+                    $("#jsBar").animate({width: "50%"});
+                }
+                shown = !shown;
+            });
+        });
+    </script>
+</body>
+</html>
