@@ -85,10 +85,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Task 0: Setup
             console.log("jQuery is ready!");
 
-            // Task 1: Selectors and CSS
             $("h1").css("color", "steelblue");
             $("#headline").text("Computer Science Student");
             $(".intro").css("font-style", "italic");
@@ -99,17 +97,14 @@
                 $("body").css({background: "#222", color: "white"});
             });
 
-            // Task 2: Visibility
             $("#hide").click(function() { $("#status").hide(); });
             $("#show").click(function() { $("#status").show(); });
             $("#toggle").click(function() { $("#status").toggle(); });
 
-            // Task 3: Fade
             $("#fadeIn").click(function() { $("#gallery img").fadeIn(); });
             $("#fadeOut").click(function() { $("#gallery img").fadeOut(); });
             $("#fadeToggle").click(function() { $("#gallery img").fadeToggle(); });
 
-            // Task 4: Slide
             $(".slide").click(function() {
                 let panel = $(this).next();
                 if (panel.is(":visible")) {
@@ -122,7 +117,6 @@
                 $("#goalInfo").slideToggle();
             });
 
-            // Task 5: Add and remove skills
             $("#addSkill").click(function() {
                 let skill = $("#skillInput").val().trim();
                 if (skill) $("#skills").append($("<li>").text(skill));
@@ -135,19 +129,16 @@
                 $("#skills li:last").remove();
             });
 
-            // Task 6: Attributes
             $("#changeLink").click(function() {
                 $("#social").attr("href", "https://www.linkedin.com");
                 $("#social").text("LinkedIn");
             });
 
-            // Task 7: Form
             $("#name, #email").on("input", function() {
                 $("#liveName").text($("#name").val());
                 $("#liveEmail").text($("#email").val());
             });
 
-            // Task 8: Animation
             let shown = false;
             $("#animateSkills").click(function() {
                 if (shown) {
