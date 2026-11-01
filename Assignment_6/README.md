@@ -3,7 +3,7 @@
 **Name:** Nikita Zuy  
 **Group:** IT-2501
 
-A simple portfolio made with HTML and jQuery. The small amount of CSS is inside `index.html`.
+https://v01demort.github.io/Assignment_6/
 
 ## Part 1. Getting Started with jQuery
 
