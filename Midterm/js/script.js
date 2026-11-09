@@ -78,4 +78,31 @@ $(document).ready(function () {
         });
         showItems();
     }
+
+    if (document.getElementById("lightbox")) {
+        const photos = $(".gallery-photo");
+        let photoIndex = 0;
+
+        function showPhoto() {
+            $("#lightbox-image").attr("src", photos.eq(photoIndex).attr("src"))
+                .attr("alt", photos.eq(photoIndex).attr("alt"));
+        }
+
+        photos.on("click", function () {
+            photoIndex = photos.index(this);
+            showPhoto();
+            $("#lightbox").fadeIn(200);
+        });
+        $("#lightbox-close").on("click", function () { $("#lightbox").fadeOut(200); });
+        $("#lightbox-prev").on("click", function () {
+            photoIndex--;
+            if (photoIndex < 0) photoIndex = photos.length - 1;
+            showPhoto();
+        });
+        $("#lightbox-next").on("click", function () {
+            photoIndex++;
+            if (photoIndex === photos.length) photoIndex = 0;
+            showPhoto();
+        });
+    }
 });
