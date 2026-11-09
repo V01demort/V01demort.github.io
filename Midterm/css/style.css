@@ -165,6 +165,51 @@ h2 {
     background: #0008;
 }
 
+.gallery-photo {
+    cursor: pointer;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000d;
+    z-index: 1000;
+}
+
+#lightbox-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+#lightbox button {
+    position: absolute;
+    z-index: 1;
+}
+
+#lightbox-close {
+    top: 20px;
+    right: 20px;
+}
+
+#lightbox-prev, #lightbox-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#lightbox-prev {
+    left: 12px;
+}
+
+#lightbox-next {
+    right: 12px;
+}
+
 @media (min-width: 576px) {
     h1 {
         font-size: 2.5rem;
