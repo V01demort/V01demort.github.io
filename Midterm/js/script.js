@@ -1,4 +1,54 @@
 $(document).ready(function () {
+    if (document.getElementById("register-form")) {
+        function feedback(id, valid, message) {
+            $("#" + id).toggleClass("is-valid", valid).toggleClass("is-invalid", !valid);
+            $("#" + id + "-feedback").text(message)
+                .attr("class", "small " + (valid ? "text-success" : "text-danger"));
+        }
+
+        function checkRegistration() {
+            const name = $("#reg-name").val().trim();
+            const email = $("#reg-email").val().trim();
+            const password = $("#reg-password").val();
+            const confirmation = $("#reg-confirm").val();
+            const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            const match = confirmation !== "" && confirmation === password;
+
+            feedback("reg-name", name !== "", name ? "Looks good" : "Name is required");
+            feedback("reg-email", emailValid, emailValid ? "Looks good" : "Enter a valid email");
+            $("#reg-password").toggleClass("is-valid", password !== "")
+                .toggleClass("is-invalid", password === "");
+            feedback("reg-confirm", match, match ? "Passwords match" : "Passwords must match");
+
+            let strength = "Weak";
+            if (password.length >= 10 && /[A-Z]/.test(password) && /[0-9]/.test(password)) {
+                strength = "Strong";
+            } else if (password.length >= 6) {
+                strength = "Medium";
+            }
+            let color = "danger";
+            if (strength === "Medium") color = "warning";
+            if (strength === "Strong") color = "success";
+            $("#password-strength").text(password ? strength + " password" : "Password is required")
+                .attr("class", "small text-" + color);
+
+            return name !== "" && emailValid && password !== "" && match;
+        }
+
+        $("#register-form input").on("input", function () {
+            checkRegistration();
+            $("#registration-status").text("").removeClass("alert alert-danger alert-success");
+        });
+
+        $("#register-form").on("submit", function (event) {
+            event.preventDefault();
+            const valid = checkRegistration();
+            $("#registration-status")
+                .text(valid ? "Registration successful! (Demo only)" : "Please correct the fields above.")
+                .attr("class", "alert mt-3 " + (valid ? "alert-success" : "alert-danger"));
+        });
+    }
+
     if (document.getElementById("menu-items")) {
         const items = [
             { name: "Espresso", price: 800, category: "Drinks" },

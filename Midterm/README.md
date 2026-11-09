@@ -1,41 +1,40 @@
-# Mrf Meow Café
+# Mrf Meow Café — Endterm Project
 
 **Topic:** Coffee Shop Website — Cat Café  
 **Group:** IT-2501  
-**Published website:** https://v01demort.github.io/Midterm/
+**Published website:** https://v01demort.github.io/Midterm/  
+**Repository:** https://github.com/V01demort/V01demort.github.io  
 
 ## Description
 
-A five-page website for a fictional coffee shop with resident cats in Astana. Warm brown colours, coffee, pastries and cats create a cosy atmosphere. Visitors can explore the café, view its menu, meet the cats and fill in a contact form.
+A five-page website for a fictional cat café in Astana, based on our midterm project. Visitors can browse the café menu, meet the cats, send a demo contact form, and try a demo registration form. The endterm adds interactive features with JavaScript and jQuery while keeping the original design and page structure.
 
 ## Features
 
-- Home, About, Menu, Our Cats and Contact pages with shared navigation and footer.
-- Semantic HTML, a menu table and a form with required fields and email validation.
-- Flexbox header, CSS Grid cat cards and Bootstrap grid and utility classes.
-- Mobile-first layout with media queries at 576px and 992px.
-- CSS variables, relative/absolute positioning and alternating table rows.
-- Photos on every page with simple hover effects, focus styles, Google Fonts and lazy-loaded images.
+- Five pages: Home, About, Menu, Our Cats and Contact.
+- Original responsive layout, semantic HTML5, CSS3, Bootstrap 5.3.8, Flexbox, and CSS Grid.
+- Registration form with required fields, RegEx email validation, colored weak/medium/strong password indicator, password confirmation, and real-time feedback.
+- Live case-insensitive menu search and All / Drinks / Treats category filter buttons.
+- Dynamic menu data table with full CRUD operations (Add, Read, Update via modal dialog, Delete with confirmation prompt).
+- Cat photo gallery with lightbox enlargement, previous/next navigation buttons, and jQuery fade transitions.
 
 ## Technologies
 
-HTML5, CSS3 and Bootstrap 5.3.8. No JavaScript.
+HTML5, CSS3, Bootstrap 5.3.8, JavaScript and jQuery 3.7.1.
 
 ## Team and individual contributions
 
-Suggested allocation: confirm or update these roles to reflect each member's actual work before submission.
-
 | Member | Contribution |
 | --- | --- |
-| Nikita Zuy | Home and About pages; shared header, footer and Flexbox navigation. |
-| Aruzhan Abdrakhmanova | Menu and Our Cats pages; table, CSS Grid and hover effects. |
-| Abbaskhan Ibraimov | Contact form, Bootstrap layout, media queries and publication. |
+| Nikita Zuy | Home and About pages; cat gallery grid, lightbox modal with navigation and jQuery fade transitions. |
+| Aruzhan Abdrakhmanova | Menu and Our Cats pages; dynamic menu search, category filters, and table CRUD operations. |
+| Abbaskhan Ibraimov | Contact page; registration form validation (RegEx, password strength, matching), styling, and documentation. |
 
 ## How to open
 
-Open `index.html` in a browser. Internet is needed for the Nunito font from Google Fonts. Bootstrap and images are included in the project.
+Visit https://v01demort.github.io/Midterm/ or open `index.html` locally in a browser. Internet connection is required for jQuery and Google Fonts. Bootstrap and images are included in the repository.
 
-The café, cat profiles and contact details are fictional. Social links open the platform homepages. The form uses HTML validation and reloads Contact with the entered values in the URL; it does not deliver messages. Use example details when testing.
+The café, cats and contact details are fictional. Registration is only a client-side demonstration: no account is created and no password is stored. Changes to the menu are temporary and reset after a page refresh. The original contact form remains a demo and does not send messages.
 
 ## Photos
 
