@@ -1,12 +1,20 @@
-# Mrf Meow Café
+# Mrf Meow Café — Endterm Project
 
 **Topic:** Coffee Shop Website — Cat Café  
 **Group:** IT-2501  
 **Published website:** https://v01demort.github.io/Midterm/
+**Repository:** https://github.com/V01demort/V01demort.github.io
 
 ## Description
 
 A five-page website for a fictional coffee shop with resident cats in Astana. Warm brown colours, coffee, pastries and cats create a cosy atmosphere. Visitors can explore the café, view its menu, meet the cats and fill in a contact form.
+
+## Endterm additions
+
+- Registration form with required fields, RegEx email check, weak/medium/strong password strength indicator, matching passwords and real-time feedback.
+- Live case-insensitive menu search and All / Drinks / Treats category buttons.
+- Dynamic menu CRUD table: add, read, edit and delete (with confirmation).
+- Cat gallery lightbox with previous/next buttons and jQuery fade transitions.
 
 ## Features
 
@@ -19,11 +27,11 @@ A five-page website for a fictional coffee shop with resident cats in Astana. Wa
 
 ## Technologies
 
-HTML5, CSS3 and Bootstrap 5.3.8. No JavaScript.
+HTML5, CSS3, Bootstrap 5.3.8, JavaScript and jQuery 3.7.1.
 
 ## Team and individual contributions
 
-Suggested allocation: confirm or update these roles to reflect each member's actual work before submission.
+Original midterm contribution descriptions retained here. Confirm the actual endterm contribution of each group member before submission.
 
 | Member | Contribution |
 | --- | --- |
@@ -33,7 +41,9 @@ Suggested allocation: confirm or update these roles to reflect each member's act
 
 ## How to open
 
-Open `index.html` in a browser. Internet is needed for the Nunito font from Google Fonts. Bootstrap and images are included in the project.
+Open `index.html` in a browser. Internet is needed for the Nunito font and jQuery. Bootstrap and images are included in the project. Endterm enhancements appear on Menu, Our Cats, and Contact.
+
+Registration is a client-side demo only: it does not create an account or store a password. Menu changes are not saved after a refresh.
 
 The café, cat profiles and contact details are fictional. Social links open the platform homepages. The form uses HTML validation and reloads Contact with the entered values in the URL; it does not deliver messages. Use example details when testing.
 

@@ -154,6 +154,72 @@ h2 {
     background-color: var(--light);
 }
 
+
+/* Endterm: simple form and modal */
+.registration-form {
+    max-width: 480px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#item-dialog {
+    width: min(90%, 400px);
+    padding: 24px;
+    border: 0;
+    border-radius: 10px;
+}
+
+#item-dialog::backdrop {
+    background: #0008;
+}
+
+/* Endterm: photo lightbox */
+.gallery-photo {
+    cursor: pointer;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000d;
+    z-index: 1000;
+}
+
+#lightbox-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+#lightbox button {
+    position: absolute;
+    z-index: 1;
+}
+
+#lightbox-close {
+    top: 20px;
+    right: 20px;
+}
+
+#lightbox-prev, #lightbox-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#lightbox-prev {
+    left: 12px;
+}
+
+#lightbox-next {
+    right: 12px;
+}
+
 @media (min-width: 576px) {
     h1 {
         font-size: 2.5rem;
