@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Mrf Meow Café</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,48 +26,59 @@
         <h1>Our menu</h1>
         <p class="mb-4">Your favourite coffee, buttery pastries and something sweet for a slow afternoon.</p>
 
-        <div class="row align-items-center g-4">
-            <div class="col-md-6">
-                <table class="menu-table">
-                    <caption>Drinks and treats · Prices in KZT</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Item</th>
-                            <th scope="col">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Espresso</th>
-                            <td>800</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Catpuccino</th>
-                            <td>1,200</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Vanilla Latte</th>
-                            <td>1,400</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Hot Chocolate</th>
-                            <td>1,300</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Butter Croissant</th>
-                            <td>900</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Cheesecake</th>
-                            <td>1,600</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="row align-items-start g-4">
+            <section class="col-md-6">
+                <label class="form-label" for="menu-search">Search menu</label>
+                <input class="form-control mb-3" id="menu-search" type="search" placeholder="Search items">
+                <div class="btn-group mb-3" role="group" aria-label="Menu categories">
+                    <button class="btn btn-outline-secondary category-btn active" data-category="All" type="button">All</button>
+                    <button class="btn btn-outline-secondary category-btn" data-category="Drinks" type="button">Drinks</button>
+                    <button class="btn btn-outline-secondary category-btn" data-category="Treats" type="button">Treats</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="menu-table">
+                        <caption>Drinks and treats · Prices in KZT</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="menu-items"></tbody>
+                    </table>
+                </div>
+                <p id="no-results" class="text-muted" style="display: none;">No items found.</p>
+                <p class="small text-muted mt-2">Demo menu: changes last until the page is refreshed.</p>
+                <button id="add-item" class="btn btn-meow mt-2" type="button">Add item</button>
+            </section>
             <div class="col-md-6">
                 <img class="photo" src="images/pastries.jpg" alt="Golden croissants dusted with icing sugar" loading="lazy">
             </div>
         </div>
+        <dialog id="item-dialog" aria-labelledby="form-title">
+            <form id="item-form">
+                <h2 id="form-title">Add menu item</h2>
+                <div class="mb-3">
+                    <label class="form-label" for="item-name">Name</label>
+                    <input class="form-control" id="item-name" type="text" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="item-price">Price (KZT)</label>
+                    <input class="form-control" id="item-price" type="number" min="1" step="1" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="item-category">Category</label>
+                    <select class="form-select" id="item-category">
+                        <option value="Drinks">Drinks</option>
+                        <option value="Treats">Treats</option>
+                    </select>
+                </div>
+                <button class="btn btn-meow" type="submit">Save item</button>
+                <button id="cancel-item" class="btn btn-secondary" type="button">Cancel</button>
+            </form>
+        </dialog>
     </main>
 
     <footer class="py-4 text-center">
@@ -77,5 +88,7 @@
             <p class="mb-0">&copy; 2026 Mrf Meow Café · IT-2501</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
