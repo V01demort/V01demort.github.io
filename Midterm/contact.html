@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Mrf Meow Café</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,6 +53,35 @@
                 </form>
             </div>
         </div>
+
+        <section class="mt-5">
+            <h2>Join our cat club</h2>
+            <p>Create a demo account. No data is sent to a server.</p>
+            <form id="register-form" class="registration-form" novalidate>
+                <div class="mb-3">
+                    <label class="form-label" for="reg-name">Name</label>
+                    <input class="form-control" id="reg-name" type="text" required>
+                    <div id="reg-name-feedback" class="small"></div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="reg-email">Email</label>
+                    <input class="form-control" id="reg-email" type="email" required>
+                    <div id="reg-email-feedback" class="small"></div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="reg-password">Password</label>
+                    <input class="form-control" id="reg-password" type="password" required>
+                    <div id="password-strength" class="small"></div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="reg-confirm">Confirm password</label>
+                    <input class="form-control" id="reg-confirm" type="password" required>
+                    <div id="reg-confirm-feedback" class="small"></div>
+                </div>
+                <button class="btn btn-meow" type="submit">Register</button>
+                <div id="registration-status" role="status"></div>
+            </form>
+        </section>
     </main>
 
     <footer class="py-4 text-center">
@@ -62,5 +91,7 @@
             <p class="mb-0">&copy; 2026 Mrf Meow Café · IT-2501</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
