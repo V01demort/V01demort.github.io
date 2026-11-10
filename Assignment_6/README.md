@@ -63,6 +63,3 @@ I created the HTML portfolio, added basic CSS for the images and skill bars, and
 
 ## How to Run
 Open `index.html` in a browser with internet access. Open the browser console (F12) to check Task 0.
-
-## Submission
-Upload all project files to a public GitHub repository, enable GitHub Pages, and submit both links to Moodle. The defense is mandatory.
