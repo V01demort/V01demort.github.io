@@ -17,9 +17,6 @@ Mrf Meow Café is a five-page website for a fictional cat café in Astana. We ma
 - Menu table with Add, View, Edit and Delete functions, including a confirmation before deletion.
 - Cat gallery with enlarged photos, previous/next buttons and jQuery fade effects.
 
-## Technologies
-
-HTML5, CSS3, Bootstrap 5.3.8, JavaScript, jQuery 3.7.1 and GitHub Pages.
 
 ## Team contributions
 
@@ -36,24 +33,23 @@ HTML5, CSS3, Bootstrap 5.3.8, JavaScript, jQuery 3.7.1 and GitHub Pages.
 3. We added the new features in JavaScript and jQuery while keeping the original HTML, CSS and Bootstrap layout.
 4. We tested the forms, menu and gallery, updated the README and renamed the project folder to Endterm.
 
-## Endterm commits
-
-These commits show the changes made by each member:
-
-| Member | Work | Commits |
-| --- | --- | --- |
-| Aruzhan | Menu layout and JavaScript functions | [916518b](https://github.com/V01demort/V01demort.github.io/commit/916518b93339bae82eb809b26d936aa82c60d206), [51f3b07](https://github.com/V01demort/V01demort.github.io/commit/51f3b0748ef4bbf3b9b37393f1621be2089f4178) |
-| Nikita | Gallery lightbox and transitions | [2e1d137](https://github.com/V01demort/V01demort.github.io/commit/2e1d137bb244722c7f00140b69d048aa7fb91680), [c8a9538](https://github.com/V01demort/V01demort.github.io/commit/c8a95382bd2a05f7a252986b1d28a3749ef2bf40) |
-| Abbaskhan | Registration form and validation | [4fda485](https://github.com/V01demort/V01demort.github.io/commit/4fda485a6852ae9d2d42a7e7c61d2f976b6497af), [0b31ff8](https://github.com/V01demort/V01demort.github.io/commit/0b31ff8fe5d90f2829fab76e5cb506594ab63129) |
 
 ## Project files
 
 The Endterm folder contains index.html, about.html, menu.html, gallery.html and contact.html. The css folder contains Bootstrap and style.css, the js folder contains script.js, and the images folder contains the café and cat photos.
 
-## How to run
+## Webpage
 
-Open https://v01demort.github.io/Endterm/ or download the repository and open Endterm/index.html in a browser. An internet connection is needed for jQuery and Google Fonts.
+![alt text](src/image.png)
 
-The website is a front-end demo. The registration and contact forms do not send data to a server, and menu changes reset after refreshing the page.
+![alt text](src/image-1.png)
 
-Photos: Unsplash.
+![alt text](src/image-2.png)
+
+![alt text](src/image-3.png)
+
+![alt text](src/image-4.png)
+
+![alt text](src/image-5.png)
+
+![alt text](src/image-6.png)
