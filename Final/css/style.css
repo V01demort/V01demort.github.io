@@ -2,11 +2,25 @@
     --brown: #704a35;
     --light: #efe2d3;
     --background: #faf6f0;
+    --text: #382b23;
+    --surface: white;
+    --hover: #4a3023;
+    --button-text: white;
+}
+
+body.dark {
+    --brown: #deb58f;
+    --light: #3d302a;
+    --background: #211a16;
+    --text: #f7ece2;
+    --surface: #302620;
+    --hover: white;
+    --button-text: #211a16;
 }
 
 body {
     background-color: var(--background);
-    color: #382b23;
+    color: var(--text);
     font-family: Nunito, Arial, sans-serif;
 }
 
@@ -45,7 +59,7 @@ nav a {
 }
 
 nav .active, a:hover {
-    color: #4a3023;
+    color: var(--hover);
     text-decoration: underline;
 }
 
@@ -89,7 +103,8 @@ h2 {
     bottom: 15px;
     left: 15px;
     padding: 8px;
-    background-color: white;
+    background-color: var(--surface);
+    color: var(--text);
     border-radius: 8px;
 }
 
@@ -101,7 +116,8 @@ h2 {
 
 .cat-card, #contact-form {
     padding: 20px;
-    background-color: white;
+    background-color: var(--surface);
+    color: var(--text);
     border-radius: 10px;
 }
 
@@ -116,12 +132,12 @@ h2 {
 
 .btn-meow {
     background-color: var(--brown);
-    color: white;
+    color: var(--button-text);
 }
 
 .btn-meow:hover, .btn-meow:focus {
-    background-color: #4a3023;
-    color: white;
+    background-color: var(--hover);
+    color: var(--button-text);
     text-decoration: none;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px #d8c2ac;
@@ -134,11 +150,12 @@ h2 {
 
 .menu-table {
     width: 100%;
-    background-color: white;
+    background-color: var(--surface);
 }
 
 .menu-table caption {
     caption-side: top;
+    color: var(--text);
 }
 
 .menu-table th, .menu-table td {
@@ -147,7 +164,7 @@ h2 {
 
 .menu-table thead {
     background-color: var(--brown);
-    color: white;
+    color: var(--button-text);
 }
 
 .menu-table tbody tr:nth-child(even) {
@@ -159,6 +176,8 @@ h2 {
     padding: 20px;
     border: 0;
     border-radius: 10px;
+    background-color: var(--surface);
+    color: var(--text);
 }
 
 #item-dialog::backdrop {
@@ -213,8 +232,62 @@ h2 {
 .registration-form {
     max-width: 480px;
     padding: 20px;
-    background-color: white;
+    background-color: var(--surface);
+    color: var(--text);
     border-radius: 10px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px;
+    color: var(--text);
+    background-color: var(--surface);
+    border: 1px solid var(--light);
+    text-align: left;
+}
+
+.faq-answer {
+    display: none;
+    padding: 12px;
+    background-color: var(--surface);
+}
+
+#no-results, #signed-in-message {
+    display: none;
+}
+
+body.dark .form-control,
+body.dark .form-select {
+    background-color: var(--surface);
+    color: var(--text);
+    border-color: var(--light);
+}
+
+body.dark .form-control::placeholder {
+    color: #c6b7ab;
+}
+
+body.dark .btn-outline-secondary {
+    color: var(--text);
+    border-color: var(--text);
+}
+
+body.dark .text-muted {
+    color: #d0bfb2 !important;
 }
 
 @media (min-width: 576px) {
