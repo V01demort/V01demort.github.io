@@ -1,4 +1,75 @@
 $(document).ready(function () {
+    $(".header-content").append(`
+        <div class="header-actions">
+            <button id="theme-toggle" class="btn btn-sm btn-outline-secondary" type="button">Dark mode</button>
+            <a id="sign-in-link" href="contact.html#sign-in">Sign in</a>
+            <span id="welcome-user">Welcome back!</span>
+            <button id="sign-out" class="btn btn-sm btn-outline-secondary" type="button">Sign out</button>
+        </div>
+    `);
+
+    if (localStorage.getItem("cafeTheme") === "dark") {
+        $("body").addClass("dark");
+    }
+
+    function showTheme() {
+        $("#theme-toggle").text($("body").hasClass("dark") ? "Light mode" : "Dark mode");
+    }
+    showTheme();
+
+    $("#theme-toggle").on("click", function () {
+        $("body").toggleClass("dark");
+        localStorage.setItem("cafeTheme", $("body").hasClass("dark") ? "dark" : "light");
+        showTheme();
+    });
+
+    function showLogin() {
+        const signedIn = localStorage.getItem("cafeSignedIn") === "yes";
+        $("#sign-in-link").toggle(!signedIn);
+        $("#welcome-user, #sign-out, #signed-in-message").toggle(signedIn);
+        $("#sign-in-form").toggle(!signedIn);
+    }
+    showLogin();
+
+    $("#sign-in-form").on("submit", function (event) {
+        event.preventDefault();
+        const email = $("#login-email").val().trim();
+        const password = $("#login-password").val();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || password.length < 6) {
+            $("#login-error").text("Enter a valid email and a password of at least 6 characters.");
+            return;
+        }
+        localStorage.setItem("cafeSignedIn", "yes");
+        $("#login-password").val("");
+        $("#login-error").text("");
+        showLogin();
+    });
+
+    $("#sign-out").on("click", function () {
+        localStorage.removeItem("cafeSignedIn");
+        showLogin();
+    });
+
+    $(".faq-question").on("click", function () {
+        $(this).next(".faq-answer").slideToggle(200);
+        const open = $(this).attr("aria-expanded") === "true";
+        $(this).attr("aria-expanded", !open);
+        $(this).find("span").text(open ? "+" : "−");
+    });
+
+    $("#cat-fact-button").on("click", async function () {
+        $("#cat-fact").text("Loading...");
+        try {
+            const response = await fetch("https://catfact.ninja/fact");
+            if (!response.ok) throw new Error("Request failed");
+            const data = await response.json();
+            if (!data.fact) throw new Error("No fact returned");
+            $("#cat-fact").text(data.fact);
+        } catch (error) {
+            $("#cat-fact").text("Could not load a cat fact. Please try again.");
+        }
+    });
+
     if (document.getElementById("register-form")) {
         function feedback(id, valid, message) {
             $("#" + id).toggleClass("is-valid", valid).toggleClass("is-invalid", !valid);
@@ -16,8 +87,8 @@ $(document).ready(function () {
 
             feedback("reg-name", name !== "", name ? "Looks good" : "Name is required");
             feedback("reg-email", emailValid, emailValid ? "Looks good" : "Enter a valid email");
-            $("#reg-password").toggleClass("is-valid", password !== "")
-                .toggleClass("is-invalid", password === "");
+            $("#reg-password").toggleClass("is-valid", password.length >= 6)
+                .toggleClass("is-invalid", password.length < 6);
             feedback("reg-confirm", match, match ? "Passwords match" : "Passwords must match");
 
             let strength = "Weak";
@@ -29,10 +100,10 @@ $(document).ready(function () {
             let color = "danger";
             if (strength === "Medium") color = "warning";
             if (strength === "Strong") color = "success";
-            $("#password-strength").text(password ? strength + " password" : "Password is required")
+            $("#password-strength").text(password ? strength + " password (minimum 6 characters)" : "Password is required")
                 .attr("class", "small text-" + color);
 
-            return name !== "" && emailValid && password !== "" && match;
+            return name !== "" && emailValid && password.length >= 6 && match;
         }
 
         $("#register-form input").on("input", function () {
