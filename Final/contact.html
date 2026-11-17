@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Mrf Meow Café</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,7 +32,7 @@
                 <p>Astana, Kazakhstan<br>hello@mrfmeow.example</p>
                 <h2>Opening hours</h2>
                 <p>Monday–Friday: 9:00–20:00<br>Saturday–Sunday: 10:00–21:00</p>
-                <img class="photo" src="images/cafe.jpg" alt="Warm hanging lights and a glowing café sign above the counter" loading="lazy">
+                <img class="photo" src="images/contact-terrace.png" alt="Sunny cat café terrace with flowers, coffee and city view" loading="lazy">
             </section>
             <div class="col-md-6">
                 <form id="contact-form" action="contact.html" method="get">
@@ -82,6 +82,24 @@
                 <div id="registration-status" role="status"></div>
             </form>
         </section>
+
+        <section id="sign-in" class="mt-5">
+            <h2>Sign in</h2>
+            <p>Demo only: no real authentication and no password is saved.</p>
+            <form id="sign-in-form" class="registration-form" novalidate>
+                <div class="mb-3">
+                    <label class="form-label" for="login-email">Email</label>
+                    <input class="form-control" id="login-email" type="email" autocomplete="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="login-password">Password (at least 6 characters)</label>
+                    <input class="form-control" id="login-password" type="password" autocomplete="current-password" required>
+                </div>
+                <button class="btn btn-meow" type="submit">Sign in</button>
+                <p id="login-error" class="text-danger mt-2" role="alert"></p>
+            </form>
+            <p id="signed-in-message" role="status">You are signed in. You can sign out using the button in the header.</p>
+        </section>
     </main>
 
     <footer class="py-4 text-center">
@@ -91,7 +109,7 @@
             <p class="mb-0">&copy; 2026 Mrf Meow Café · IT-2501</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
