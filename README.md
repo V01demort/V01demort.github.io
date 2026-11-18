@@ -25,12 +25,16 @@ A collection of web development assignments completed during my studies at **Ast
 A responsive website for a fictional cat café, developed as a team project for university coursework.
 
 **Features:**
-- Five interconnected pages
-- Responsive design
-- Interactive registration form
-- Searchable menu and category filters
-- Image gallery with jQuery effects
+- Five interconnected responsive pages
+- Registration form with validation and demo sign-in/sign-out
+- Searchable menu with category filters and CRUD operations
+- Cat gallery with lightbox and jQuery effects
+- Light/dark mode with localStorage
+- FAQ with jQuery animations
+- Cat facts loaded from an external API
 
-**Technologies:** HTML, CSS, Bootstrap, JavaScript, jQuery
+**Technologies:** HTML, CSS, Bootstrap, JavaScript, jQuery, localStorage, Fetch API
 
-[Live Website](https://v01demort.github.io/Endterm/) | [Source Code](Endterm/)
+**Images:** Some illustrations were generated using AI.
+
+[Live Website](https://v01demort.github.io/Final/) | [Source Code](Final/)
