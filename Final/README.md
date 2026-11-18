@@ -29,15 +29,20 @@ A five-page website for a fictional cat cafe in Astana. We continued the same mi
 
 ## Technologies
 
-HTML5, CSS3, Bootstrap 5.3.8 (CDN), JavaScript, jQuery 3.7.1 (CDN), localStorage, Fetch API, JSON.
+HTML, CSS, Bootstrap(CDN), JavaScript, jQuery(CDN), localStorage, Fetch API, JSON.
 
-## Group members and work areas
+## AI Usage
+We used AI tools to generate cat images for our website. These images were used in the gallery and other sections of the website.
 
-| Member | Endterm work |
-| --- | --- |
-| Nikita Zuy | contact.html, gallery.html, images generation |
-| Aruzhan Abdrakhmanova | about.html, script.js, index.html |
-| Abbaskhan Ibraimov | style.css, menu.html |
+
+## Group Members and Contributions
+
+| Member | Midterm work | Endterm work | Final work |
+|---|---|---|---|
+| Nikita Zuy | Project structure, Lato font, Home and About pages | contact.html, gallery.html, image generation | contact.html, gallery.html, gallery functionality, image generation |
+| Aruzhan Abdrakhmanova | Menu table, CSS Grid gallery, README | about.html, script.js, index.html | index.html, about.html, script.js |
+| Abbaskhan Ibraimov | Bootstrap 5, style.css, Contact form validation | style.css, menu.html | style.css, menu.html, menu interface and interactive features |
+
 
 ## Screenshots
 ### Home Page
@@ -54,26 +59,6 @@ HTML5, CSS3, Bootstrap 5.3.8 (CDN), JavaScript, jQuery 3.7.1 (CDN), localStorage
 ### Contact Page
 <img width="1919" height="922" alt="image" src="https://github.com/user-attachments/assets/ec013149-2a05-4a72-88d5-491721f777a8" />
 <img width="1919" height="918" alt="image" src="https://github.com/user-attachments/assets/a4ceda2f-ca04-4903-b175-b4c147573a80" />
-
-The website can be opened directly through GitHub Pages:
-https://v01demort.github.io/Final/
-
-To run it locally:
-1. Download the repository from GitHub.
-2. Extract the ZIP file.
-3. Open the Final folder.
-4. Open index.html in a browser.
-
-The project can also be opened in Visual Studio Code using Live Server.
-An internet connection is needed for Bootstrap, jQuery and the Cat Facts API.
-
-## How the Features Work
-
-Most of the interactive features are implemented using JavaScript and jQuery.
-The menu uses CRUD operations to add, display, edit and delete items. Users can also search for items and filter them by category.
-The registration form checks user input before showing a success message. The demo sign-in uses localStorage to save the login status.
-The light/dark mode also uses localStorage to remember the selected theme.
-The cat facts feature sends a request to an external API using Fetch and displays the JSON response on the page.
 
 ## Project Limitations
 
