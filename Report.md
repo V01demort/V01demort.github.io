@@ -117,15 +117,15 @@ Figure 2. Menu Page
  <img width="1919" height="910" alt="Снимок экрана 2026-11-18 135011" src="https://github.com/user-attachments/assets/12e232a7-7b4c-4cd8-ac1c-2a2e6ad221e6" />
 
 Figure 3. About Page
+<img width="1919" height="914" alt="Снимок экрана 2026-11-18 135149" src="https://github.com/user-attachments/assets/8ce9f6f8-3a14-4537-b01a-47e3d7fcec7a" />
 <img width="1919" height="918" alt="Снимок экрана 2026-11-18 135117" src="https://github.com/user-attachments/assets/3daadfa7-bc03-4867-8092-51d9eb53d4e9" />
 
 Figure 4. Cat Gallery and API
  <img width="1919" height="912" alt="Снимок экрана 2026-11-18 135034" src="https://github.com/user-attachments/assets/f106b878-878d-4b8b-a467-8900b46eaf96" />
 
 Figure 5. Contact Page  
+<img width="1919" height="918" alt="Снимок экрана 2026-11-18 135117" src="https://github.com/user-attachments/assets/3daadfa7-bc03-4867-8092-51d9eb53d4e9" />
 <img width="1919" height="922" alt="Снимок экрана 2026-11-18 135103" src="https://github.com/user-attachments/assets/82fe44e8-08ff-41d7-b59a-e7eaec5b9d83" />
-<img width="1919" height="914" alt="Снимок экрана 2026-11-18 135149" src="https://github.com/user-attachments/assets/8ce9f6f8-3a14-4537-b01a-47e3d7fcec7a" />
-
 Figure 6. Dark Mode
  <img width="952" height="575" alt="Снимок экрана 2026-11-18 145751" src="https://github.com/user-attachments/assets/c0799100-8bf8-4a65-bfc3-05e0a0a07f2c" />
 
