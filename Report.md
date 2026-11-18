@@ -118,11 +118,8 @@ Figure 2. Menu Page
 
 Figure 3. About Page
 <img width="1919" height="914" alt="Снимок экрана 2026-11-18 135149" src="https://github.com/user-attachments/assets/8ce9f6f8-3a14-4537-b01a-47e3d7fcec7a" />
-<img width="1919" height="918" alt="Снимок экрана 2026-11-18 135117" src="https://github.com/user-attachments/assets/3daadfa7-bc03-4867-8092-51d9eb53d4e9" />
-
 Figure 4. Cat Gallery and API
- <img width="1919" height="912" alt="Снимок экрана 2026-11-18 135034" src="https://github.com/user-attachments/assets/f106b878-878d-4b8b-a467-8900b46eaf96" />
-
+<img width="1919" height="912" alt="Снимок экрана 2026-11-18 135034" src="https://github.com/user-attachments/assets/f106b878-878d-4b8b-a467-8900b46eaf96" />
 Figure 5. Contact Page  
 <img width="1919" height="918" alt="Снимок экрана 2026-11-18 135117" src="https://github.com/user-attachments/assets/3daadfa7-bc03-4867-8092-51d9eb53d4e9" />
 <img width="1919" height="922" alt="Снимок экрана 2026-11-18 135103" src="https://github.com/user-attachments/assets/82fe44e8-08ff-41d7-b59a-e7eaec5b9d83" />
