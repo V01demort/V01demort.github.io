@@ -40,9 +40,6 @@ HTML5, CSS3, Bootstrap 5.3.8 (CDN), JavaScript, jQuery 3.7.1 (CDN), localStorage
 | Abbaskhan Ibraimov | style.css, menu.html |
 
 ## Screenshots
-
-Screenshots will be added later.
-
 ### Home Page
 <img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/b5f84fbd-653e-4a05-b068-8eaea506f65a" />
 ### About Page
