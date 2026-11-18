@@ -2,7 +2,6 @@
 
 **Group:** IT-2501  
 **Website:** https://v01demort.github.io/Final/  
-**Repository:** https://github.com/V01demort/V01demort.github.io
 
 ## About
 
@@ -47,6 +46,7 @@ We used AI tools to generate cat images for our website. These images were used 
 ## Screenshots
 ### Home Page
 <img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/b5f84fbd-653e-4a05-b068-8eaea506f65a" />
+
 ### About Page
 <img width="1919" height="914" alt="image" src="https://github.com/user-attachments/assets/811cb341-32c0-435e-a522-9d491e19f28a" />
 
